@@ -1,7 +1,15 @@
-version: 1.0.{build}
+version: 1.0.0.{build}
+patch: true
+  file: AssemblyInfo.cs
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 configuration: Release
 platform: Any CPU
 before_build:
 - cmd: nuget restore
+nuget:
+  account_feed: true
+  project_feed: true
 build:
   verbosity: normal
