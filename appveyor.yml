@@ -13,3 +13,4 @@ nuget:
   project_feed: true
 build:
   verbosity: normal
+  publish_nuget: true
