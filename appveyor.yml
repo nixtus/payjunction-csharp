@@ -10,7 +10,6 @@ platform: Any CPU
 before_build:
 - cmd: nuget restore
 nuget:
-  account_feed: true
   project_feed: true
 build:
   verbosity: normal
